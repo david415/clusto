@@ -13,7 +13,7 @@ def main():
     parser = OptionParser(usage="usage: %prog pool-name [pool-name]*")
     parser.add_option("-a", "--attr", dest="attribute", default=False, help="The clusto attribute to retrieve")
     parser.add_option('-d', '--datacenter', dest='datacenter', default=None,
-                      help="Datacenter to allocate servers from")
+                      help="Show servers only in specified datacenter")
     options, args = parser.parse_args()
 
     if not args:
